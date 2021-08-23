@@ -7,28 +7,68 @@ Terraform module that allows to apply Security Group rules for Active Directory.
 
 | Name | Version |
 |------|---------|
-| terraform | >= 0.12.0 |
-| aws | >= 0.60.0 |
+| <a name="requirement_terraform"></a> [terraform](#requirement\_terraform) | >= 0.12.0 |
+| <a name="requirement_aws"></a> [aws](#requirement\_aws) | >= 0.60.0 |
 
 ## Providers
 
 | Name | Version |
 |------|---------|
-| aws | >= 0.60.0 |
+| <a name="provider_aws"></a> [aws](#provider\_aws) | >= 0.60.0 |
+
+## Modules
+
+No modules.
+
+## Resources
+
+| Name | Type |
+|------|------|
+| [aws_security_group_rule.out_tcp_dns_cidrs](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/security_group_rule) | resource |
+| [aws_security_group_rule.out_tcp_dns_security_groups](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/security_group_rule) | resource |
+| [aws_security_group_rule.out_tcp_global_catalog_cidrs](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/security_group_rule) | resource |
+| [aws_security_group_rule.out_tcp_global_catalog_security_groups](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/security_group_rule) | resource |
+| [aws_security_group_rule.out_tcp_high_tcp_cidrs](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/security_group_rule) | resource |
+| [aws_security_group_rule.out_tcp_high_tcp_security_groups](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/security_group_rule) | resource |
+| [aws_security_group_rule.out_tcp_kerberos_password_v5_cidrs](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/security_group_rule) | resource |
+| [aws_security_group_rule.out_tcp_kerberos_password_v5_security_groups](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/security_group_rule) | resource |
+| [aws_security_group_rule.out_tcp_keyberos_key_distribution_center_cidrs](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/security_group_rule) | resource |
+| [aws_security_group_rule.out_tcp_keyberos_key_distribution_center_security_groups](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/security_group_rule) | resource |
+| [aws_security_group_rule.out_tcp_ldap_cidrs](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/security_group_rule) | resource |
+| [aws_security_group_rule.out_tcp_ldap_security_groups](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/security_group_rule) | resource |
+| [aws_security_group_rule.out_tcp_ldaps_cidrs](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/security_group_rule) | resource |
+| [aws_security_group_rule.out_tcp_ldaps_security_groups](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/security_group_rule) | resource |
+| [aws_security_group_rule.out_tcp_net_bios_session_service_cidrs](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/security_group_rule) | resource |
+| [aws_security_group_rule.out_tcp_net_bios_session_service_security_groups](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/security_group_rule) | resource |
+| [aws_security_group_rule.out_tcp_remote_procedure_call_cidrs](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/security_group_rule) | resource |
+| [aws_security_group_rule.out_tcp_remote_procedure_call_security_groups](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/security_group_rule) | resource |
+| [aws_security_group_rule.out_tcp_smb_cidrs](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/security_group_rule) | resource |
+| [aws_security_group_rule.out_tcp_smb_security_groups](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/security_group_rule) | resource |
+| [aws_security_group_rule.out_udp_dns_cidrs](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/security_group_rule) | resource |
+| [aws_security_group_rule.out_udp_dns_security_groups](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/security_group_rule) | resource |
+| [aws_security_group_rule.out_udp_ldap_cidrs](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/security_group_rule) | resource |
+| [aws_security_group_rule.out_udp_ldap_security_groups](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/security_group_rule) | resource |
+| [aws_security_group_rule.out_udp_ldaps_cidrs](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/security_group_rule) | resource |
+| [aws_security_group_rule.out_udp_ldaps_security_groups](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/security_group_rule) | resource |
+| [aws_security_group_rule.out_udp_net_bios_datagram_service_cidrs](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/security_group_rule) | resource |
+| [aws_security_group_rule.out_udp_net_bios_datagram_service_security_groups](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/security_group_rule) | resource |
+| [aws_security_group_rule.out_udp_net_bios_name_resolution_cidrs](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/security_group_rule) | resource |
+| [aws_security_group_rule.out_udp_net_bios_name_resolution_security_groups](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/security_group_rule) | resource |
+| [aws_security_group_rule.out_udp_ntp_cidrs](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/security_group_rule) | resource |
+| [aws_security_group_rule.out_udp_ntp_security_groups](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/security_group_rule) | resource |
 
 ## Inputs
 
 | Name | Description | Type | Default | Required |
 |------|-------------|------|---------|:--------:|
-| active\_directory\_cidrs | List of CIDR's of the active directory servers. | `list(string)` | `[]` | no |
-| active\_directory\_security\_group\_ids | List of Security Group ID's of the active directory servers. | `list(string)` | `[]` | no |
-| active\_directory\_security\_group\_ids\_count | Number of Security Group ID's of the active directory servers. | `number` | `0` | no |
-| security\_group\_id | ID of the security group to which to apply the rules on. | `string` | n/a | yes |
+| <a name="input_active_directory_cidrs"></a> [active\_directory\_cidrs](#input\_active\_directory\_cidrs) | List of CIDR's of the active directory servers. | `list(string)` | `[]` | no |
+| <a name="input_active_directory_security_group_ids"></a> [active\_directory\_security\_group\_ids](#input\_active\_directory\_security\_group\_ids) | List of Security Group ID's of the active directory servers. | `list(string)` | `[]` | no |
+| <a name="input_active_directory_security_group_ids_count"></a> [active\_directory\_security\_group\_ids\_count](#input\_active\_directory\_security\_group\_ids\_count) | Number of Security Group ID's of the active directory servers. | `number` | `0` | no |
+| <a name="input_security_group_id"></a> [security\_group\_id](#input\_security\_group\_id) | ID of the security group to which to apply the rules on. | `string` | n/a | yes |
 
 ## Outputs
 
-No output.
-
+No outputs.
 <!-- END OF PRE-COMMIT-TERRAFORM DOCS HOOK -->
 
 ## Versioning
